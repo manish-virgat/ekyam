@@ -2,7 +2,7 @@
 $(document).ready(function(){
     // Activate Carousel
     $("#myCarousel").carousel({
-        interval: 8000,
+        interval: 5000,
         pause: null
     });
 
