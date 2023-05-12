@@ -1,24 +1,14 @@
 .navbar {
-    border-width: 0 0 1px;
-    border-radius: 0;
-    right: 0;
-    left: 0;
     height: 82px;
-}
-
-.navbar.navbar-default {
-    border-bottom: none;
 }
 
 #menu.navbar-default {
     background-color: rgba(0, 0, 0, .7);
-    border-color: rgba(231, 231, 231, 0);
 }
 
 #menu {
     transition: all 0.8s;
     background-color: rgba(248, 248, 248, 0);
-    border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
     text-transform: uppercase;
@@ -34,17 +24,13 @@
     z-index: 1;
 }
 
-.nopadding{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
 .navbar-toggle {
     margin-top: 30px;
-    margin-right: 33px;
+    margin-right: 0px;
     border: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #d99813;
+    background-color: black;
 }
 .navbar-toggle .icon-bar {
     width: 25px;
@@ -55,14 +41,14 @@
 }
 .navbar-collapse {
     box-shadow: none;
-    /*background-color: #252525;*/
+    /* background-color: #252525; */
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background: none;
 }
 .navbar-nav {
     text-align: center;
-    margin-top: 23px;
+    /* margin-top: 23px; */
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -94,7 +80,7 @@
     width: 50px;
     height: 50px;
     line-height: 50px;
-    margin: -25px 20px 0;
+    margin-TOP: 0;
     padding: 0;
     border: 1px solid #fff;
     text-rendering: auto;
@@ -127,7 +113,6 @@
     font-size: 12px;
 }
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
     .carousel-caption {
         display: none;
