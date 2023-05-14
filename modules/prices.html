@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="../css/custom.css">
   <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
-  
 </head>
 <body>
   <div class="wrapper">
@@ -38,7 +38,7 @@
                       Rooms</a>
                   </li>
                   
-                  <li  class="active"><a href="../modules/prices.html" style="color: #d1d0d0; margin-top: 12px;">
+                  <li><a href="../modules/prices.html" style="color: #d99813; margin-top: 12px;">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     Price Listing</a>
                   </li>
@@ -55,7 +55,7 @@
     <div class="container m-t">
 
         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-2">
+            <!-- <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-2">
                 <div class="form-group form-group-lg form-group-icon-left text-center">
                     <label class="font-black">Check-in Date</label>
                     <div class="text-placeholder">
@@ -72,22 +72,38 @@
                         <input class="form-control date-pick pl40" data-date-format="M d, yyyy" id="check_out_date" name="check_out_date" placeholder="DD/MM/YYYY"/>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-3">
+            </div> -->
+
+            <div class="container" style="display: flex; justify-content: center;
+            align-items: center;">
+                <div class="date-field" style="display: flex;
+                align-items: center;
+                margin-bottom: 20px;">
+                  <label for="check-in" style="margin: 20px;">Check-in Date:</label>
+                  <input type="date" id="check-in" name="check-in" style="padding: 5px;">
+                </div>
+                <div class="date-field" style="display: flex;
+                align-items: center;
+                margin-bottom: 20px;">
+                  <label for="check-out" style="margin: 20px;">Check-out Date:</label>
+                  <input type="date" id="check-out" name="check-out" style="padding: 5px;">
+                </div>
+              </div>
+            
+            <!-- <div style="margin: auto;">
                 <div class="form-group form-group-lg form-group-icon-left text-center">
-                    <label class="font-black">Preferential Code</label>
+                    <label class="font-black">Have A Discount Coupon?</label>
                     <div class="text-placeholder">
-                        <i class="fa fa-barcode input-icon" aria-hidden="true"></i>
-                        <input class="form-control pl40" name="special_code" type="text" placeholder="CODE" id="check_code"/>
+                        <input class="form-control pl40" name="special_code" type="text" placeholder="CODE" id="check_code" style="margin: auto; text-align: center; width: 50%;"/>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="text-center col-sm-12">
                 <div class="gap"></div>
                 <div class="col-sm-2 col-md-3 hidden-xs"></div>
                 <div class="col-xs-12 col-sm-4 col-md-3">
-                    <p class="bookDirect"><b>BOOK DIRECT</b>
+                    <p class="bookDirect"><b>BOOK DIRECT AT</b><br>
                         <small class="text-color text-left">BEST GUARANTEED RATE!</small>
                     </p>
                 </div>
@@ -218,10 +234,20 @@
     <span>&copy Ekyam | 2023</span>
     </footer>
   </div>
-  <script src="../js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   
+  <script>
+    $(document).ready(function() {
+      // Initialize datepicker for check-in and check-out fields
+      $('#check-in, #check-out').datepicker({
+        autoclose: true,
+        todayHighlight: true
+      });
+    });
+  </script>
+
   </body>
   </html>
   

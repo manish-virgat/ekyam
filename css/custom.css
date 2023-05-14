@@ -41,20 +41,12 @@
 }
 .navbar-collapse {
     box-shadow: none;
-    /* background-color: #252525; */
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background: none;
 }
 .navbar-nav {
     text-align: center;
-    /* margin-top: 23px; */
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #d99813;
-    background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
     color: #d1d0d0;
