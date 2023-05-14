@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ekyam | Login</title>
+  <title>Ekyam | Create An Account</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/custom.css">
@@ -55,26 +55,36 @@
       <div class="jumbotron">
         
   <img src="/img/logo/logo (1) - Copy.png">
-        <h2>Login</h2>
+        <h3>Create An Account</h3>
         <form>
-          <div class="form-group">
-            <label for="email"></label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="text-align: center;">
-          </div>
-          <div class="form-group">
-            <label for="pwd"></label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" style="text-align: center;">
-          </div>
-          
-          <a href="#">Forgot Password?</a> <br> <br>
-
-          <button type="submit" class="btn btn-primary">Let Me In</button>
-          <br><br> Or <br> <h4>Login Via:
-          <a href="#"><img src="/img/logo/google.png" style="height: 35px;"></a>
-          <a href="#"><img src="/img/logo/facebook.png" style="height: 35px;"></a></h4>
-        </form> <br>
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone-number"></label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your Phone Number" name="Phone" required>
+            </div>
+            <div class="form-group">
+              <label for="Password"></label>
+              <input type="password" class="form-control" id="Password" placeholder="Password" name="Password" required>
+            </div>
+            <br>
+            <input type="checkbox" id="tnc" name="tnc" required> I agree to the privacy policy
+            <br> <br> By continuing you agree to our Terms of Use <br> <br>
+            <button type="submit" class="btn btn-primary">Register Me</button>
+          </form>
+          <br> Or <br> <h4>Register Via:
+            <a href="#"><img src="/img/logo/google.png" style="height: 35px;"></a>
+            <a href="#"><img src="/img/logo/facebook.png" style="height: 35px;"></a></h4>
+          </form> <br>
+          <h4>
         <h4>
-        Don't have an account? <a href="/modules/signup.html">Create One!</a>
+        Already have an account? <a href="/modules/login.html">Login</a>
         </h4>
         
         
