@@ -1,33 +1,26 @@
-
-$(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel({
-        interval: 5000,
-        pause: null
-    });
-
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
-    });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-    });
-    $(".item4").click(function(){
-        $("#myCarousel").carousel(3);
-    });
-
-    // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-    });
-});
-
-
-
+// $(document).ready(function() {
+//     const carousel = $("#myCarousel");
+//     const items = carousel.find(".carousel-item");
+//     const indicators = carousel.find(".carousel-indicators li");
+//     const controlLeft = carousel.find(".carousel-control-left");
+//     const controlRight = carousel.find(".carousel-control-right");
+    
+//     carousel.carousel({
+//       interval: 5000,
+//       pause: "hover"
+//     });
+    
+//     indicators.click(function() {
+//       const index = $(this).index();
+//       carousel.carousel(index);
+//     });
+    
+//     controlLeft.click(function() {
+//       carousel.carousel("prev");
+//     });
+    
+//     controlRight.click(function() {
+//       carousel.carousel("next");
+//     });
+//   });
+  
